@@ -48,9 +48,9 @@ Cover all four:
 
 - What `tasks = STARTER_TASKS` actually does, and why it is not a copy.
 - Why Ada's `append` changed Zo's list, in terms of what both names point at.
-- How you would fix `new_student`, and what makes your fixed version a **pure
-  function**.
-- One situation where you would *want* two names pointing at the same list.
+- How you would fix `new_student`, and how your fix gives each student a list
+  of their own.
+- One situation where you would _want_ two names pointing at the same list.
   This behavior is not a flaw in Python, so say what it is for.
 
 That last part is the one that matters. Anyone can memorize "copy your lists".

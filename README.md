@@ -1,7 +1,7 @@
 # Explaining References
 
-Teach a brand new programmer why two names can point at the same list, and
-what that costs.
+Explain a bug caused by two names pointing at the same list, and decide when
+sharing a list is what you want.
 
 - [AI Use on This Assignment](#ai-use-on-this-assignment)
 - [Setup](#setup)
@@ -18,7 +18,7 @@ without notes. Paste this if you want that kind of help:
 
 > You are acting as a tutor. Quiz me on what `=` does when the value is a list
 > or a dictionary, on the difference between a copy and a second name, and on
-> what makes a function pure, until I can explain all three without looking
+> when two names sharing one list is useful, until I can explain all three without looking
 > anything up. Tell me when my reasoning is wrong or imprecise. Do not write or
 > rewrite any part of my response for me.
 
