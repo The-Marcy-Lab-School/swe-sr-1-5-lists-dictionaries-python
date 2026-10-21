@@ -15,12 +15,6 @@ to check how it is rendered before submitting.
 
 ## Question 1
 
-Use these terms correctly within your response:
-
-- **reference**
-- **alias**
-- **record** or **lookup table** (whichever is relevant)
-
 A study app gives every new student the same starter checklist, then lets them
 tick items off their own copy. It keeps a list of student records, and gives
 each record the starter checklist.
@@ -32,11 +26,14 @@ students = [
     {"name": "Zo"},
 ]
 
+# Add a "tasks" key with starter tasks to each student
 for student in students:
     student["tasks"] = STARTER_TASKS
 
+# Add a task to Ada's list
 students[0]["tasks"].append("join study group")
 
+# Print out Zo's list
 print(students[1]["tasks"])
 ```
 
@@ -49,22 +46,28 @@ Running the program prints:
 
 ### Prompt 1
 
+Use these terms correctly within your response:
+
+- **reference**
+- **alias**
+- **record** or **lookup table** (whichever is relevant)
+
 Explain what went wrong, and what the author believed was happening instead.
 
 Cover all four:
 
-- What `student["tasks"] = STARTER_TASKS` actually does, and why it is not a
-  copy.
-- Why adding a task to Ada's list changed Zo's list, in terms of what
-  `students[0]["tasks"]` and `students[1]["tasks"]` point at.
+- What `student["tasks"] = STARTER_TASKS` actually does.
+- Why adding a task to Ada's list changed Zo's list. Reference specific code
+  that contributed to this behavior.
 - How you would fix the loop, and how your fix gives each student a list of
   their own.
 - One situation where you would _want_ two names pointing at the same list.
   This behavior is not a flaw in Python, so say what it is for.
 
-That last part is the one that matters. Anyone can memorize "copy your lists".
-Knowing when not to is what tells you whether somebody understands references
-or has just been burned once.
+That last part is the most important one. Every behavior or rule in Python has
+scenarios where it is the correct choice, even if it isn't right for the current
+one. Being able to discern when to use each rule is the key to mastering a
+language.
 
 ### Response 1
 
